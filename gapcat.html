@@ -1,0 +1,113 @@
+<html xmlns="http://www.w3.org/1999/xhtml" >
+	<head>
+	    <title>Gap Cat</title>
+	    <link rel='stylesheet' type='text/css' href='styles/styles.css' />
+	    <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
+	    <link rel="icon" type="image/png" href="assets/gapcatIcon.png">
+		<link rel="stylesheet" type="text/css" href="datatables/css/jquery.dataTables.css">
+		<script type="text/javascript" charset="utf8" src="datatables/js/jquery.js"></script>
+		<script type="text/javascript" charset="utf8" src="datatables/js/jquery.dataTables.js"></script>
+	</head>
+	<body>
+		<div>
+			<div id="header">
+                <img src="assets/gapcatheader-side@1x200.png" height="200" width="100%">
+                <img src="assets/gapcatheader@400x200.png" height="200" width="400" class="headerImage">
+            </div>
+            <div id="homeLink">
+                <a href="http://shallotgames.com"><i class="fa fa-arrow-circle-left fa-lg"></i> Shallot Games Home</a>
+            </div>
+            <div id="storeLinks"> 
+                <div class="sectionBody">
+                    <a href="https://itunes.apple.com/us/app/gap-cat/id918338995?mt=8" target="_blank"><img src="assets/appstore@135x40.svg" height="45" width="auto"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.cloudrunner&hl=en" target="_blank"><img src="assets/playstore@45.png" height="45" width="auto"></a>
+                </div>
+            </div>
+            <div id="gapCatContent">
+                <div class="sectionBody">
+                    <img src="assets/gapcatscreenshot1.png" height="320px" width="480px" class="screenShot floatRight">
+                    <br/>
+                    Gap Cat is our latest release... and also our first release! It is available for free on both Android and iOS.
+                    <br/>
+                    <br/>
+                    Run on some roofs, tap to hop to the next one, get as far as you can, simple. Is there a reason? Nope! Cats don't have reasons. Can I win? Nope! But you can try.
+                    
+                    <div class="entityDivider"><br/></div>
+
+                    <img src="assets/gapcatscreenshot2.png" height="320px" width="480px" class="screenShot floatLeft">
+                    <br/>
+                    Compete with your friends to beat their high score, and if you think you're good enough, compete with the rest of the world! 
+                    <br/>
+                    <br/>
+                    Score submissions are arcarde-style and don't require a login, check out all of the existing scores below!
+                    <br/>
+                    <br/>
+                    Why have you read this far? Go play!
+                </div>
+            </div>
+			<div id="scores" class="hidden">
+                <div class="sectionBody scoresTable">
+                    <div class="heading">
+                        GAP CAT SCORES
+                        <br/>
+                        <br/>
+                        <br/>
+                    </div>
+				    <table id="scoresTable" class="display" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Display Name</th>
+                                <th>Score</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                    
+                        </tbody>
+                    </table>
+                </div>
+			</div>
+			<div id="footer">
+				<br/>
+				<br/>
+				&copy; 2014 Shallot Games<br/>
+                <a href="http://shallotgames.com/gapcatprivacypolicy.html">Gap Cat Privacy Policy</a>
+				<br/>
+				<br/>
+				<br/>
+			</div>
+		</div>
+	  	<script>
+	  		$(document).ready(function(){
+	  			$.ajax({
+				  	url: 'http://shallotscores-env.elasticbeanstalk.com/rs/TapCat/getAll?jsonCallback=?',
+				  	dataType: 'json',
+				  	success: function(data){
+				  	}
+				});
+			});
+			function handleScores(data) {
+
+                var scoresArray = [];
+
+                for(var i in data){
+                    var entryText = data[i].entryText;
+                    if (!entryText || 0 === entryText.length) entryText = "No name entered";
+                    scoresArray.push([parseInt(i)+1, entryText, data[i].exposedScore]);
+                }
+
+                var scoresTable = $('#scoresTable').dataTable( {
+                    "data": scoresArray,
+                    "columns": [
+                        { "title": "Rank"},
+                        { "title": "Display Name"},
+                        { "title": "Score"}
+                    ]
+                });  
+                $('#scoresTable_length').addClass('hidden');
+                $('#scores').removeClass('hidden');
+			}
+		</script>			
+	</body>
+</html>
