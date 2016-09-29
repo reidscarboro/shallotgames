@@ -1,23 +1,11 @@
-
-html {
-  height: 100%;
-  box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
 body, html{
   	margin:0;
   	width: 100%;
   	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
+
 body {
-	position: relative;
-  	margin: 0;
-  	padding-bottom: 6rem;
-  	min-height: 100%;
+	padding-bottom: 80px;
 }
 
 div {
@@ -85,7 +73,7 @@ a {
 }
 
 .footer {
-	position: absolute;
+	position: fixed;
 	right: 0;
 	bottom: 0;
 	left: 0;
@@ -155,4 +143,10 @@ a {
 .pressKit img {
 	max-width: 128px;
 	margin: 20px;
+}
+
+.pressKitHeaderImage {
+	width: 116px;
+	height: 116px;
+	margin: 0 !important;
 }
