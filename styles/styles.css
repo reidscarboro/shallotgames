@@ -126,6 +126,7 @@ a {
 	width: 50%;
 	min-width: 600px;
 	margin: auto;
+	color: #545454;
 }
 
 .presskit .title {
@@ -137,6 +138,7 @@ a {
 .pressKit .header {
 	border-bottom: 1px solid #dadada;
 	font-size: 16pt;
+	color: #797979;
 }
 
 .pressKitSection {
@@ -144,6 +146,10 @@ a {
 	padding: 20px;
 	margin-top: 20px;
 	border-radius: 20px;
+
+	-webkit-box-shadow: 2px 2px 12px -4px #2b2b2b;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+	-moz-box-shadow:    2px 2px 12px -4px #2b2b2b;  /* Firefox 3.5 - 3.6 */
+	box-shadow:         2px 2px 12px -4px #2b2b2b;
 }
 
 .pressKit img {
