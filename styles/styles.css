@@ -1,8 +1,23 @@
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 body, html{
   	margin:0;
-  	padding:0;
   	width: 100%;
   	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+body {
+	position: relative;
+  	margin: 0;
+  	padding-bottom: 6rem;
+  	min-height: 100%;
 }
 
 div {
@@ -12,6 +27,11 @@ div {
 a {
     text-decoration: none;
     color: white;
+}
+
+.pressKit a {
+    text-decoration: underline;
+    color: #2a2a2a;
 }
 
 .hidden {
@@ -100,4 +120,33 @@ a {
 	margin: auto;
 	margin-top: 30px;
 	margin-bottom: 30px;
+}
+
+.pressKit {
+	width: 50%;
+	min-width: 300px;
+	margin: auto;
+}
+
+.presskit .title {
+	font-size: 24pt;
+	padding-bottom: 20px;
+	color: white;
+}
+
+.pressKit .header {
+	border-bottom: 1px solid #dadada;
+	font-size: 16pt;
+}
+
+.pressKitSection {
+	background-color: white;
+	padding: 20px;
+	margin-top: 20px;
+	border-radius: 20px;
+}
+
+.pressKit img {
+	max-width: 128px;
+	margin: 20px;
 }
