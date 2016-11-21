@@ -2,10 +2,14 @@ body, html{
   	margin:0;
   	width: 100%;
   	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  	overflow: hidden;
+    height: 100%;
 }
 
 body {
 	padding-bottom: 80px;
+	height: 100%;
+	overflow: auto;
 }
 
 div {
@@ -36,7 +40,7 @@ a {
 
 .headerRule {
 	background-color: #111111;
-	height: 20px;
+	height: 1px;
 }
 
 .section {
@@ -77,19 +81,34 @@ a {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	padding: 1rem;
+	padding: 16px;
+	height: 19px;
 	background-color: #111111;
 	color: #575757;
+}
+
+#scores {
+	margin-top: 50px;
 }
 
 .scoresTable {
 	padding: 20px;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	background-color: #4f85bc;
+	width: 90%;
+	max-width: 500px;
+	margin:auto;
+	color: white;
 	border-radius: 10px;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #1a1a1a;
+}
+
+.scoresHeading {
+	width: 100%;
+	text-align: center;
+	border-bottom: 2px solid #79B5F3;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 .contactDescription {
@@ -149,4 +168,99 @@ a {
 	width: 116px;
 	height: 116px;
 	margin: 0 !important;
+}
+
+.carousel {
+	height: calc(100% - 217px + 20px);
+}
+
+.slick-slide {
+    outline: none
+}
+
+.slick-prev {
+	left: 50px;
+	z-index: 1;
+}
+
+.slick-next {
+	right: 50px;
+	z-index: 1;
+}
+
+.slick-dots {
+	bottom: 25px;
+}
+
+.slick-prev:before {
+	font-family: FontAwesome;
+	content: '\f053';
+	font-size: 40px;
+}
+
+.slick-next:before {
+	font-family: FontAwesome;
+	content: '\f054';
+	font-size: 40px;
+}
+.slick-dots li button:before {
+	font-family: FontAwesome;
+	content: '\f111';
+	font-size: 20px;
+}
+
+.socialLink {
+	float: right;
+	margin-right: 20px;
+}
+
+.carousel .section {
+	box-shadow: inset  0  25px 25px -25px #000, 
+				inset  0 -25px 25px -25px #000;
+}
+
+.carousel .putthole {
+	background-image: url("../assets/main_putthole.png");
+	background-size:cover;
+
+}
+
+.carousel .putthole a {
+	display: block;
+	height: 100%;
+}
+
+.carousel .putthole img {
+	margin: auto;
+	max-height: 100%;
+	max-width: 75%;
+
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.carousel .gapcat {
+	background-image: url("../assets/main_gapcat.png");
+	background-size:cover;
+	background-position: center; 
+}
+
+.carousel .gapcat a {
+	display: block;
+	height: 100%;
+}
+
+.carousel .gapcat img {
+	margin: auto;
+	max-height: 100%;
+	max-width: 65%;
+
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 1000px) {
+	
 }
