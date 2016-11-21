@@ -171,7 +171,7 @@ a {
 }
 
 .carousel {
-	height: calc(100% - 217px + 20px);
+	height: calc(100% - 217px + 22px);
 }
 
 .slick-slide {
