@@ -218,6 +218,27 @@ a {
 	
 }
 
+.carousel .vistagolf {
+	background-image: url("../assets/main_vistagolf.png");
+	background-size:cover;
+
+}
+
+.carousel .vistagolf a {
+	display: block;
+	height: 100%;
+}
+
+.carousel .vistagolf img {
+	margin: auto;
+	max-height: 100%;
+	max-width: 75%;
+
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
 .carousel .putthole {
 	background-image: url("../assets/main_putthole.png");
 	background-size:cover;
