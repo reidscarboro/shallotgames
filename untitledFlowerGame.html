@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<style>
+		.bg-image {
+			/* The image used */
+			background-image: url("assets/flowerGameBackground.png");
+
+			/* Add the blur effect */
+			filter: blur(8px);
+			-webkit-filter: blur(8px);
+
+			/* Full height */
+			width: 100%;
+			height: 100%; 
+
+			float: left;
+
+			/* Center and scale the image nicely */
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.form {
+			position: absolute;
+			height: 640px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 2;
+			width: 100%;
+			text-align: center;
+		}
+		</style>
+	</head>
+	<body style="width:100%; margin: 0; min-height: 640px;">
+		<div class="bg-image"></div>
+		<div class="form">
+			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe_itJXc6S6NP4TYAT_-fuNtTO5vQU3_4rkKPCg4a0Vqr-XPA/viewform?embedded=true" width="640" height="640" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+		</div>
+	</body>
+</html>
