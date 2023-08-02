@@ -12,7 +12,7 @@ no_universal_links and instructs the system not to open it as a universal
 link."
                },
                {
-                  "/": "/coffeegolf/addfriend",
+                  "/": "/coffeegolf/*",
                   "comment": "Matches any URL with a path that starts with 
 /buy/."
                }
