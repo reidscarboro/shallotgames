@@ -7,7 +7,7 @@
 					"exclude": true
 				},
 				{
-					"/": "/coffeegolf/addfriend/*"
+					"/": "/coffeegolf/addfriend"
 				}
 			]
 		}]
