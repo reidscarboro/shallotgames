@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.shallotgames.coffeegolf",
+    "sha256_cert_fingerprints":
+    ["D3:D2:57:1F:32:9E:57:57:E4:A9:63:16:A9:56:DB:90:CA:BA:33:B4:A5:57:2E:C1:BF:78:02:13:40:AE:FC:88"]
+  }
+}]
