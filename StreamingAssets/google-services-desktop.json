@@ -1,0 +1,36 @@
+{
+  "project_info": {
+    "project_number": "720932173613",
+    "project_id": "coffee-golf",
+    "storage_bucket": "coffee-golf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:720932173613:ios:ff43eb7ae106bffd04c5a4",
+        "android_client_info": {
+          "package_name": "com.shallotgames.coffeegolf"
+        }
+      },
+      "api_key": [
+        {
+          "current_key": "AIzaSyBx6D7r_2Yj48niILHyMxS6PtnyyaAvOPI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 0
+        },
+        "appinvite_service": {
+          "status": 1
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "720932173613-t6mbqsua41pt5qkfrri2ad63tem6q9ks.apps.googleusercontent.com"
+        }
+      ]
+    }
+  ],
+  "configuration_version": "1"
+}
