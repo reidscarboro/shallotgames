@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+    
+    <!-- Coffee Golf Marketing Page -->
+    <url>
+        <loc>https://shallotgames.com/coffeegolf.html</loc>
+        <lastmod>2024-12-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://shallotgames.com/images/CoffeeGolf_PhoneScreenshot_1.png</image:loc>
+            <image:title>Coffee Golf - Daily Course Overview</image:title>
+            <image:caption>Coffee Golf daily course showing 5-hole challenge with strategic routing</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://shallotgames.com/images/CoffeeGolf_PhoneScreenshot_2.png</image:loc>
+            <image:title>Coffee Golf - Gameplay Mechanics</image:title>
+            <image:caption>Coffee Golf precision gameplay with driver, wedge, and putter options</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://shallotgames.com/images/CoffeeGolf_PhoneScreenshot_3.png</image:loc>
+            <image:title>Coffee Golf - Score Sharing</image:title>
+            <image:caption>Coffee Golf social score sharing and daily results</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://shallotgames.com/images/CoffeeGolf_PhoneScreenshot_4.png</image:loc>
+            <image:title>Coffee Golf - Global Rankings</image:title>
+            <image:caption>Coffee Golf global leaderboards and player rankings</image:caption>
+        </image:image>
+    </url>
+
+</urlset> 
